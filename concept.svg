@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 210 297"
+   height="297mm"
+   width="210mm">
+  <defs
+     id="defs2">
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker5020"
+       style="overflow:visible;">
+      <path
+         id="path5018"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4974"
+       style="overflow:visible;">
+      <path
+         id="path4972"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4934"
+       style="overflow:visible;">
+      <path
+         id="path4932"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4900"
+       style="overflow:visible;">
+      <path
+         id="path4898"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4872"
+       style="overflow:visible;">
+      <path
+         id="path4870"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker4850"
+       style="overflow:visible;">
+      <path
+         id="path4848"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow2Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(1.1) rotate(180) translate(1,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path4587" />
+    </marker>
+    <marker
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4974-9"
+       style="overflow:visible">
+      <path
+         id="path4972-1"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <text
+       id="text3715"
+       y="27.849989"
+       x="72.559631"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="27.849989"
+         x="72.559631"
+         id="tspan3713">Boot Hint</tspan></text>
+    <text
+       id="text3719"
+       y="46.568958"
+       x="97.95462"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="46.568958"
+         x="97.95462"
+         id="tspan3717">DeviceBootReceiver</tspan></text>
+    <text
+       id="text3723"
+       y="96.301155"
+       x="128.97191"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="96.301155"
+         x="128.97191"
+         id="tspan3721">App Preferences</tspan><tspan
+         id="tspan3739"
+         style="stroke-width:0.13235044"
+         y="102.91868"
+         x="128.97191">(store data)</tspan></text>
+    <text
+       id="text3727"
+       y="73.571838"
+       x="113.45483"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="73.571838"
+         x="113.45483"
+         id="tspan3725">ExampleService</tspan></text>
+    <text
+       id="text3731"
+       y="66.351646"
+       x="35.38755"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.13235044;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044;fill:#0000ff;"
+         y="66.351646"
+         x="35.38755"
+         id="tspan3729">KeepaliveAlarm</tspan></text>
+    <text
+       id="text3735"
+       y="92.554619"
+       x="29.508812"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="92.554619"
+         x="29.508812"
+         id="tspan3733">setInexactRepeating</tspan><tspan
+         id="tspan3737"
+         style="stroke-width:0.13235044"
+         y="99.172142"
+         x="29.508812">(15 minutes)</tspan></text>
+    <text
+       id="text3743"
+       y="125.44411"
+       x="99.564301"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.13235044"
+         y="125.44411"
+         x="99.564301"
+         id="tspan3741">MainActivity</tspan></text>
+    <path
+       id="path3747"
+       d="m 94.613411,28.928663 10.156239,12.02713"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4872)" />
+    <path
+       id="path3749"
+       d="M 99.958802,47.904799 70.559154,61.268276"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4850)" />
+    <path
+       id="path3751"
+       d="m 64.411954,67.950013 7.216278,19.777945"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Lend)" />
+    <path
+       id="path3753"
+       d="M 29.666917,87.193421 38.486812,67.950013"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker5020)" />
+    <path
+       id="path3755"
+       d="m 78.0427,64.742779 33.67596,6.68174"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4900)" />
+    <path
+       id="path3757"
+       d="m 141.38558,75.16629 5.61266,16.036174"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4934)" />
+    <path
+       id="path3759"
+       d="M 122.94398,120.60211 137.6438,105.10048"
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4974)" />
+    <text
+       transform="scale(1.0024324,0.99757355)"
+       id="text5078"
+       y="32.847942"
+       x="100.07377"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="32.847942"
+         x="100.07377"
+         id="tspan5076">broadcast</tspan></text>
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-3"
+       y="115.57141"
+       x="130.9715"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="115.57141"
+         x="130.9715"
+         id="tspan5076-6">read</tspan></text>
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-7"
+       y="83.421051"
+       x="144.83578"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="83.421051"
+         x="144.83578"
+         id="tspan5076-5">save</tspan></text>
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-35"
+       y="61.987484"
+       x="85.912552"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="61.987484"
+         x="85.912552"
+         id="tspan5076-62">is bound?</tspan><tspan
+         id="tspan5607"
+         style="stroke-width:0.09213559"
+         y="66.594261"
+         x="85.912552">is null?</tspan><tspan
+         id="tspan5611"
+         style="stroke-width:0.09213559"
+         y="71.201042"
+         x="85.912552">start and</tspan><tspan
+         id="tspan5609"
+         style="stroke-width:0.09213559"
+         y="75.807823"
+         x="85.912552">(re)bind</tspan></text>
+    <path
+       id="path3759-2"
+       d="M 106.65732,114.943 118.68444,76.09734"
+       style="fill:none;stroke:#000000;stroke-width:0.25023529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4974-9)" />
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-35-7"
+       y="91.833382"
+       x="101.03468"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="91.833382"
+         x="101.03468"
+         id="tspan5076-62-0">is bound?</tspan><tspan
+         id="tspan5607-9"
+         style="stroke-width:0.09213559"
+         y="96.440163"
+         x="101.03468">is null?</tspan><tspan
+         id="tspan5611-3"
+         style="stroke-width:0.09213559"
+         y="101.04694"
+         x="101.03468">start and</tspan><tspan
+         id="tspan5609-6"
+         style="stroke-width:0.09213559"
+         y="105.65372"
+         x="101.03468">(re)bind</tspan></text>
+    <text
+       id="text3743-0"
+       y="118.05357"
+       x="95.309273"
+       style="font-style:normal;font-weight:normal;font-size:5.29401827px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.13235044"
+       xml:space="preserve"><tspan
+         style="fill:#0000ff;stroke-width:0.13235044"
+         y="118.05357"
+         x="95.309273"
+         id="tspan3741-6">App</tspan></text>
+    <path
+       id="path5754"
+       d="m 86.060787,106.16956 6.681737,-17.372524 17.639786,-26.726951 48.37579,0.26727 19.51067,23.786988 -5.61266,29.132377 -21.38156,12.56167 -36.08138,4.00904 -30.20146,-4.81085 z"
+       style="fill:none;stroke:#1400fc;stroke-width:0.665;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.665,1.33;stroke-dashoffset:0;fill-opacity:1" />
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-2"
+       y="53.414055"
+       x="76.047577"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="53.414055"
+         x="76.047577"
+         id="tspan5076-61">new</tspan></text>
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-2-8"
+       y="81.177612"
+       x="34.226337"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="81.177612"
+         x="34.226337"
+         id="tspan5076-61-7">wakeup</tspan></text>
+    <text
+       transform="scale(1.0024324,0.99757351)"
+       id="text5078-2-8-9"
+       y="77.674583"
+       x="68.683228"
+       style="font-style:normal;font-weight:normal;font-size:3.68542385px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09213559"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.09213559"
+         y="77.674583"
+         x="68.683228"
+         id="tspan5076-61-7-2">new</tspan></text>
+  </g>
+</svg>
