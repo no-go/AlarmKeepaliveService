@@ -57,7 +57,7 @@ public class KeepaliveAlarm extends BroadcastReceiver {
             am.setInexactRepeating (
                     AlarmManager.ELAPSED_REALTIME_WAKEUP,
                     500L,
-                    AlarmManager.INTERVAL_FIFTEEN_MINUTES,
+                    300000L, // 5min
                     pi
             );
             Log.d(getClass().getSimpleName(), "Alarm is set.");

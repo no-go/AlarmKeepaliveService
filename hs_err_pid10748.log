@@ -1,0 +1,184 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 39845888 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2640), pid=10748, tid=0x00007f5c80c76700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_152) (build 1.8.0_152-release-1343-b16-5323222)
+# Java VM: OpenJDK 64-Bit Server VM (25.152-b16-5323222 mixed mode linux-amd64 compressed oops)
+# Core dump written. Default location: /home/tux/Android/AlarmKeepaliveService/core or core.10748
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f5c7c077800):  VMThread [stack: 0x00007f5c80b77000,0x00007f5c80c77000] [id=10756]
+
+Stack: [0x00007f5c80b77000,0x00007f5c80c77000],  sp=0x00007f5c80c754e0,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x9ffc88]  VMError::report_and_die()+0x148
+V  [libjvm.so+0x4ce9aa]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*)+0x8a
+V  [libjvm.so+0x8673d8]  os::pd_commit_memory(char*, unsigned long, unsigned long, bool)+0xd8
+V  [libjvm.so+0x86201f]  os::commit_memory(char*, unsigned long, unsigned long, bool)+0x1f
+V  [libjvm.so+0x8d839b]  PSVirtualSpace::expand_by(unsigned long)+0x5b
+V  [libjvm.so+0x8d8ff0]  PSYoungGen::resize_generation(unsigned long, unsigned long)+0xb0
+V  [libjvm.so+0x8d930b]  PSYoungGen::resize(unsigned long, unsigned long)+0x1b
+V  [libjvm.so+0x8d5a3e]  PSScavenge::invoke_no_policy()+0xdce
+V  [libjvm.so+0x8d61f8]  PSScavenge::invoke()+0x38
+V  [libjvm.so+0x88a7e3]  ParallelScavengeHeap::failed_mem_allocate(unsigned long)+0x63
+V  [libjvm.so+0xa01754]  VM_ParallelGCFailedAllocation::doit()+0x84
+V  [libjvm.so+0xa05bf7]  VM_Operation::evaluate()+0x47
+V  [libjvm.so+0xa04658]  VMThread::evaluate_operation(VM_Operation*)+0x2c8
+V  [libjvm.so+0xa04ab1]  VMThread::loop()+0x1f1
+V  [libjvm.so+0xa04ee2]  VMThread::run()+0x72
+V  [libjvm.so+0x864822]  java_start(Thread*)+0xf2
+
+VM_Operation (0x00007f5c64cf22b0): ParallelGCFailedAllocation, mode: safepoint, requested by thread 0x00007f5c20008000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f5c1cc82000 JavaThread "Build operations Thread 4" [_thread_blocked, id=10791, stack(0x00007f5c5cb7e000,0x00007f5c5cc7f000)]
+  0x00007f5c1cc80000 JavaThread "Build operations Thread 3" [_thread_blocked, id=10790, stack(0x00007f5c5cc7f000,0x00007f5c5cd80000)]
+  0x00007f5c1cc7e800 JavaThread "Build operations Thread 2" [_thread_blocked, id=10789, stack(0x00007f5c5cd80000,0x00007f5c5ce81000)]
+  0x00007f5c1c57e800 JavaThread "Build operations" [_thread_blocked, id=10788, stack(0x00007f5c5ce81000,0x00007f5c5cf82000)]
+  0x00007f5c1d102800 JavaThread "Cache worker for execution history cache (/home/tux/.gradle/caches/5.1.1/executionHistory)" [_thread_blocked, id=10783, stack(0x00007f5c5d382000,0x00007f5c5d483000)]
+  0x00007f5c1d0de800 JavaThread "Cache worker for cache directory md-rule (/home/tux/.gradle/caches/5.1.1/md-rule)" [_thread_blocked, id=10782, stack(0x00007f5c5d483000,0x00007f5c5d584000)]
+  0x00007f5c1d0ca000 JavaThread "Cache worker for cache directory md-supplier (/home/tux/.gradle/caches/5.1.1/md-supplier)" [_thread_blocked, id=10781, stack(0x00007f5c5d584000,0x00007f5c5d685000)]
+  0x00007f5c1c630000 JavaThread "Cache worker for file hash cache (/home/tux/Android/AlarmKeepaliveService/.gradle/5.1.1/fileHashes)" [_thread_blocked, id=10780, stack(0x00007f5c640f5000,0x00007f5c641f6000)]
+  0x00007f5c1c0ec000 JavaThread "Cache worker for journal cache (/home/tux/.gradle/caches/journal-1)" [_thread_blocked, id=10779, stack(0x00007f5c643f6000,0x00007f5c644f7000)]
+  0x00007f5c1c0e7800 JavaThread "File lock request listener" [_thread_in_native, id=10777, stack(0x00007f5c644f7000,0x00007f5c645f8000)]
+  0x00007f5c1c0e1800 JavaThread "Cache worker for file hash cache (/home/tux/.gradle/caches/5.1.1/fileHashes)" [_thread_blocked, id=10776, stack(0x00007f5c645f8000,0x00007f5c646f9000)]
+  0x00007f5c1c017800 JavaThread "Thread-8" [_thread_blocked, id=10775, stack(0x00007f5c648f9000,0x00007f5c649fa000)]
+  0x00007f5c1c00e800 JavaThread "Stdin handler" [_thread_blocked, id=10774, stack(0x00007f5c649fa000,0x00007f5c64afb000)]
+  0x00007f5c1c00d800 JavaThread "Asynchronous log dispatcher for DefaultDaemonConnection: socket connection from /127.0.0.1:39839 to /127.0.0.1:38198" [_thread_blocked, id=10773, stack(0x00007f5c64afb000,0x00007f5c64bfc000)]
+  0x00007f5c20008000 JavaThread "Daemon worker" [_thread_blocked, id=10770, stack(0x00007f5c64bfc000,0x00007f5c64cfd000)]
+  0x00007f5c20006000 JavaThread "Cancel handler" [_thread_blocked, id=10769, stack(0x00007f5c64cfd000,0x00007f5c64dfe000)]
+  0x00007f5c20004000 JavaThread "Handler for socket connection from /127.0.0.1:39839 to /127.0.0.1:38198" [_thread_in_native, id=10768, stack(0x00007f5c64dfe000,0x00007f5c64eff000)]
+  0x00007f5c2802e000 JavaThread "Daemon" [_thread_blocked, id=10767, stack(0x00007f5c64eff000,0x00007f5c65000000)]
+  0x00007f5c7cfc5000 JavaThread "Daemon periodic checks" [_thread_blocked, id=10766, stack(0x00007f5c6c07e000,0x00007f5c6c17f000)]
+  0x00007f5c7cf7c000 JavaThread "Incoming local TCP Connector on port 39839" [_thread_in_native, id=10765, stack(0x00007f5c6c17f000,0x00007f5c6c280000)]
+  0x00007f5c7c0c8000 JavaThread "Service Thread" daemon [_thread_blocked, id=10763, stack(0x00007f5c80137000,0x00007f5c80238000)]
+  0x00007f5c7c0bd000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=10762, stack(0x00007f5c80239000,0x00007f5c80339000)]
+  0x00007f5c7c0bb000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=10761, stack(0x00007f5c8033a000,0x00007f5c8043a000)]
+  0x00007f5c7c0b8800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=10760, stack(0x00007f5c8043b000,0x00007f5c8053b000)]
+  0x00007f5c7c0b7000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10759, stack(0x00007f5c8053b000,0x00007f5c8063c000)]
+  0x00007f5c7c084000 JavaThread "Finalizer" daemon [_thread_blocked, id=10758, stack(0x00007f5c80974000,0x00007f5c80a75000)]
+  0x00007f5c7c07f800 JavaThread "Reference Handler" daemon [_thread_blocked, id=10757, stack(0x00007f5c80a75000,0x00007f5c80b76000)]
+  0x00007f5c7c00a800 JavaThread "main" [_thread_blocked, id=10751, stack(0x00007f5c83755000,0x00007f5c83855000)]
+
+Other Threads:
+=>0x00007f5c7c077800 VMThread [stack: 0x00007f5c80b77000,0x00007f5c80c77000] [id=10756]
+  0x00007f5c7c0ca800 WatcherThread [stack: 0x00007f5c80037000,0x00007f5c80137000] [id=10764]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007f5c7c007c70] Threads_lock - owner thread: 0x00007f5c7c077800
+[0x00007f5c7c008170] Heap_lock - owner thread: 0x00007f5c20008000
+
+Heap:
+ PSYoungGen      total 112128K, used 11258K [0x00000000e0000000, 0x00000000e8f00000, 0x0000000100000000)
+  eden space 100864K, 0% used [0x00000000e0000000,0x00000000e0000000,0x00000000e6280000)
+  from space 11264K, 99% used [0x00000000e7900000,0x00000000e83fe9d8,0x00000000e8400000)
+  to   space 7680K, 0% used [0x00000000e8780000,0x00000000e8780000,0x00000000e8f00000)
+ ParOldGen       total 60416K, used 10688K [0x00000000a0000000, 0x00000000a3b00000, 0x00000000e0000000)
+  object space 60416K, 17% used [0x00000000a0000000,0x00000000a0a70168,0x00000000a3b00000)
+ Metaspace       used 33204K, capacity 33830K, committed 34048K, reserved 1079296K
+  class space    used 4573K, capacity 4779K, committed 4864K, reserved 1048576K
+
+Card table byte_map: [0x00007f5c83065000,0x00007f5c83366000] byte_map_base: 0x00007f5c82b65000
+
+Marking Bits: (ParMarkBitMap*) 0x00007f5c84697f00
+ Begin Bits: [0x00007f5c65000000, 0x00007f5c66800000)
+ End Bits:   [0x00007f5c66800000, 0x00007f5c68000000)
+
+Polling page: 0x00007f5c8494a000
+
+CodeCache: size=245760Kb used=9674Kb max_used=9674Kb free=236085Kb
+ bounds [0x00007f5c6d000000, 0x00007f5c6d980000, 0x00007f5c7c000000]
+ total_blobs=3492 nmethods=2817 adapters=590
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 11,556 Thread 0x00007f5c7c0bd000 2891       3       java.lang.Class$MethodArray::addInterfaceMethods (44 bytes)
+Event: 11,556 Thread 0x00007f5c7c0bd000 nmethod 2891 0x00007f5c6d972790 code [0x00007f5c6d972920, 0x00007f5c6d972d28]
+Event: 11,556 Thread 0x00007f5c7c0bd000 2892       3       org.codehaus.groovy.runtime.metaclass.MetaMethodIndex::getMethods (82 bytes)
+Event: 11,558 Thread 0x00007f5c7c0bd000 nmethod 2892 0x00007f5c6d972ed0 code [0x00007f5c6d9730a0, 0x00007f5c6d973748]
+Event: 11,558 Thread 0x00007f5c7c0bd000 2894       3       org.codehaus.groovy.reflection.CachedMethod::find (30 bytes)
+Event: 11,559 Thread 0x00007f5c7c0bd000 nmethod 2894 0x00007f5c6d973a10 code [0x00007f5c6d973c00, 0x00007f5c6d974618]
+Event: 11,559 Thread 0x00007f5c7c0bd000 2893       3       groovy.lang.MetaClassImpl::getMethods (173 bytes)
+Event: 11,564 Thread 0x00007f5c7c0bd000 nmethod 2893 0x00007f5c6d974a50 code [0x00007f5c6d974d40, 0x00007f5c6d976538]
+Event: 11,565 Thread 0x00007f5c7c0bd000 2895       1       org.gradle.internal.logging.events.ProgressStartEvent::getBuildOperationId (5 bytes)
+Event: 11,565 Thread 0x00007f5c7c0bd000 nmethod 2895 0x00007f5c6d956450 code [0x00007f5c6d9565a0, 0x00007f5c6d9566b0]
+
+GC Heap History (10 events):
+Event: 3,607 GC heap after
+Heap after GC invocations=3 (full 0):
+ PSYoungGen      total 36864K, used 5101K [0x00000000e0000000, 0x00000000e4800000, 0x0000000100000000)
+  eden space 31744K, 0% used [0x00000000e0000000,0x00000000e0000000,0x00000000e1f00000)
+  from space 5120K, 99% used [0x00000000e1f00000,0x00000000e23fb440,0x00000000e2400000)
+  to   space 5120K, 0% used [0x00000000e4300000,0x00000000e4300000,0x00000000e4800000)
+ ParOldGen       total 84992K, used 1690K [0x00000000a0000000, 0x00000000a5300000, 0x00000000e0000000)
+  object space 84992K, 1% used [0x00000000a0000000,0x00000000a01a6bc8,0x00000000a5300000)
+ Metaspace       used 13182K, capacity 13514K, committed 13824K, reserved 1060864K
+  class space    used 1819K, capacity 1969K, committed 2048K, reserved 1048576K
+}
+Event: 4,506 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 36864K, used 36845K [0x00000000e0000000, 0x00000000e4800000, 0x0000000100000000)
+  eden space 31744K, 100% used [0x00000000e0000000,0x00000000e1f00000,0x00000000e1f00000)
+  from space 5120K, 99% used [0x00000000e1f00000,0x00000000e23fb440,0x00000000e2400000)
+  to   space 5120K, 0% used [0x00000000e4300000,0x00000000e4300000,0x00000000e4800000)
+ ParOldGen       total 84992K, used 1690K [0x00000000a0000000, 0x00000000a5300000, 0x00000000e0000000)
+  object space 84992K, 1% used [0x00000000a0000000,0x00000000a01a6bc8,0x00000000a5300000)
+ Metaspace       used 16015K, capacity 16346K, committed 16512K, reserved 1062912K
+  class space    used 2293K, capacity 2427K, committed 2432K, reserved 1048576K
+Event: 4,535 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 68608K, used 5088K [0x00000000e0000000, 0x00000000e4800000, 0x0000000100000000)
+  eden space 63488K, 0% used [0x00000000e0000000,0x00000000e0000000,0x00000000e3e00000)
+  from space 5120K, 99% used [0x00000000e4300000,0x00000000e47f82c8,0x00000000e4800000)
+  to   space 5120K, 0% used [0x00000000e3e00000,0x00000000e3e00000,0x00000000e4300000)
+ ParOldGen       total 84992K, used 4658K [0x00000000a0000000, 0x00000000a5300000, 0x00000000e0000000)
+  object space 84992K, 5% used [0x00000000a0000000,0x00000000a048c930,0x00000000a5300000)
+ Metaspace       used 16015K, capacity 16346K, committed 16512K, reserved 1062912K
+  class space    used 2293K, capacity 2427K, committed 2432K, reserved 1048576K
+}
+Event: 6,093 GC heap before
+{Heap before GC invocations=5 (full 0):
+ PSYou÷Êk‚«“|GJ<Xğm¿ƒzÆ%òMæŸc§¶â„-OæÅØ¥÷wÈbJh…H³!™yÔÒãO§–Oòî|ùİ¿´ïÜ1èH¢Î©’tˆP¶ã³š“çœı¾D?p,Å²²çÃî–2©¯š.Ú§4_¿d²r×8-W…Ì"‰ØËËD‡@0É«÷¿^oéÑv/Ã7Î‘ázÅ…LZ€Í‚CûÆ~­øŠYÃ~ˆjÑZB3pŠ“}ta¼ÄB¬<§z7S&Ò®«¥*£QñòïnJv›ï¤f¡Kk‡À¼û¢Dğ; êµÑ!èíË<œ-€,¿‘šÊÙÆØ`rÄX–- Áz©–ÿîË?Ö]¶xwDaf¤dsZFç0	[¾-¬‹79vØäV?YOl^†^[O$HÏéÄa…sÇÉİvW<`!õ®3{P‹*ÅB ¸K´Œæ{½†¤2æÃ¢ÛÂ<
+7}m-gá×ë	Õİ\‰·ÆU
+ÌÍÂ ’‹B•|mŒY„İ	ˆÁ×(–sb›Q~MG=I¢3ár9¾{6R§»Ì"nCgT	T"aÌY[bŸ¶ÿ¯‘%$=~­„-Õsf³ ò,»°
+ñ±B /êŞ[,d=Ş9×e9#ïwÍ¡% m¯ùUhUQ¹+7N¾®¯å>e^–¥ã¼÷ú$·Bjá$¸£ˆuÂ`Ä¯z]ÙP0^†¢™ËÌÌc¸øŠÎ;-Gì®èöYbC˜å-Û±ÃÖ8(Ù3²RïX0'‰± “C¢§İ±±OvÎ¨…]dIãÎ İC¡{qí»ô Û‹ä4±®ŞÔ·è'İÜ~ï^"R@È[¾¹.´œ#û7Âf]NÅ…!`VŠ	êg-2ôUg3÷½ç„„Y„NğFå{ÈşÇ\Mğ}`ÇÏÓÔgZ"Œ'5
+|ŠğÄô(//jŠcdk»½dRq¶³Hu‡FRóÑH?¸
+ù8hnßauç¥¦ST– BÀz¬QI»dÈùM'Üös|ÙÌ¤
+Zbø0ÜäÚÖ…>aâÁ†œÅJá=Õí{ÅY€k€“6ŸÃuÅÉ¬D]:×ô8ªô•| 'TVÇL®^•'Ñ"ç‰¢ßÔbªjEkwó˜I1ƒ&4©s9êˆ7û‰ÙR-„ìr	—y¬Şk0Ãuhı	şb.‡:€[	ü‡\Î³	è{uŒxEEíµ.›áØ\+Aü,‡C_Üw«}"$ÕŠh½¼ùÎ€U#EétûõŒÃ7µ»¤“|¦M)j+šï€İ³÷â”şøÀsßDÉ3~)LœôOå¥è±Ğ,à–]”Z,Â…ø²§„n«H¹€Íğa„ãªáÆ[étê«ÿwK61²ìòô=f£š%>–‰ÓPb`m2A`L2ÿuÍ›—º¹eè<¯vıè‘d(e&ÕøŞ÷Cü) d@½ŸAo¶¤ÑQçØ‹#êRGk;ÄÀÿy®£‹†NH©“ZLu¿v÷òÙIÕ¼*?‘w@Ô«ˆúÃ7·&JÇT‚wé]Ø~¢•²Û™jvüƒ ù¡	ºïXB¬hÒg¤ -Ó¹e4*—o2œiØ›öÿù…‹j”°À`I~+òWóÊ;ìBîÃv¸£[ºr_6·âÔsCÍ¯óèGèw©aq8Nh\>â‰õ ¶õÊİYì«ŒVî
+.£˜­Ú’Z°ãKvZIŒ¨&QzŸÆª4Ln+]guAÏÍÃ˜N3ÒŸ§idÛX6Âƒ˜ùÍæ©Ü©…óXö|×øqÎ·œ˜@e$ª_İ¿£¾şØÏ®x-èœRvê0Àü¥lLD;pš¸_T…|RÜ„lµmD#«ìhz_;ß”ö!õõ}ÁÉWTÅé‚ÿ]yYçœØÏ7Ñ€‘÷>â|âÊ	ıdßVŒüÊBÔW6©ÊTŒ0×8\óI	ÃÉLHµZô_çìI"·£sQ±šàóXPXÍÅÒDçMêÇÀTq‚Òš)ÁæfÂ`O£Y•w·RbI×QE%gÎæ0äWqùğ9÷Ø¿Ã>×~ı¿B¬f…
+`ÊV× ªx$³°xö'“ 9ˆîô'®O,ñ43/Ú29;#n%Ş¨÷›@V¦MœYnH,8²ˆ@RQĞ¦ë@êôwÖFpÉc7%™QûJ»ı_—‚¦ú1µ†·ûÊòÙ[›vßY3Ô%ÎˆFÙ(K.üÂ6|f—ÿoèp‘
+^â'T¥‘–p~¼u¤;yT£W³ùå”
+`xUıãÓS-™M¡qµkŠ`ô¯º·‰BS!‘†X€!Ô%[!î< òÓ®PqføZiõğæŞÌjÏlú±õH`gÜˆwŠkåìTÖ\aN^³i¡‘LÖğO.ãœäóÛ­€¹Ot·ŒŒ§-$Ç­²y=õ-És‘éóÇ ¶ãhÜ%î©ˆWŠÛA—Vz$8'ø—Tí_[«¨nOREiıyø¥}h<¤4#ğ‹Åçz.ˆmjxîï^.Ù`ùÏæ~J( ÄšÑM¸åNg¼´{É­ØÚõÅ±Úîn;È+ÌÃåˆ…„]á,Ş2L÷‘3‹Æ·¡îU¸’/•!¯J`ZîP:¨$ ®%DåÖ£û	›uŠùŠ«ûÓ¸AşOœ÷ĞUèJ‚ï'õ¦s™´È“Í9y˜¶ÌxËyäH4HHHñàl…Ï1Ì u
+FG¼{´ÃˆÍšÁ#÷¯ÍëSi}ÊùÉ E²bóæ†?€f£8U8@Q¡çk3Zª1ÒO@¯y¿Œ¿ot°!”Û|€Ú¢ì$‚êóá¹qÿèëá€/*ıé¯çÀ 'ª]è^£ÏJ(’g§õ®Ü+†îiW«âŠ´÷êéIçÿÙ®ö¹€¬ª?Iš‹Ì&|Qôo%®!ëñÌfô,S(F'b4—ïÏ'Æ	?•Ìì¹ñ€u9},ÔzˆËV¤eğµ[’vg¸uğu¸÷ªCj¶Ix¬Ü§€©)C–õ_ÛÆ€RmP%†/×NBt·d#Bôrş¾±ò¹EÄ¯/2fE¾,›IĞ«¼œq?²÷ŠTGÆĞHÇ[ˆÌ¨êUTæRı‡)y	ùõŒŠ‚ÀdIkû,eP•·ï
+Z2ïÑZtÇÌA2ÅbÏ˜u
+C–÷h œ·jı·n	ë«­¤²ı±•+<»²‡ËáC†5—.j ”„ˆ-ÓÁˆeóÎ‚P2LßÏ+Ã'†ÁŞgp5\Š×³Âˆê“OÏpîÍº6r¯·Ûä{˜­åY>1š9aÒÁéÍ’³yö|xÉNêfiŞÁeMœÓöˆĞªzmÇB$ÒÃ\&æ½pêp#Ğ6³ ¥•§Ë¶a¥7dÈSo›'ë>èò‘v©‚o«Ü‚«µèš&ÂpòÖtèª-BÛÉ«ĞYÈÚøæê/j5{©1ş1cX/¼b)O‘îi ›ïâÂcÔ¸ÿŞ´Ò± “bï		\
+ŒsšÚ“.{»vÉşÆİéš˜Àb÷÷Um¦æBêšE%¡×çñá2["P?¢FĞS±"“ FŠ<šŠ#¨Zı ™X8R½ì%Û{ ‹\œ{cõ1 sÂÑUê3Ò@wo3n#ÈJòKôÍáVD	Ú)–ÖIg QİVã]IWqñLCC¡U“±ˆ£ÔµÍº±2ìo¸“_Ÿ¼Z¬["R–š®j”‘¨§ÌÈıfó¿œÆ“ïİÜRÉŒì¦ø™O Ù¡í–rÙŸ6"4 .ëk,4ÆˆG²Œ‡Ÿƒ‹e¹[ãñøöÍĞ‚C^,ƒòJq¬Â*éJ}èğêÚ¸˜çùB;ˆıÓxüÊ¡ÓmÌİ+DW™}fy-–UO’¯\ú.xŒ’í×š@†¢. ¿Kwü6æÎ6†¯à›' Ü›L¾õûˆ‰j(Uü`àBµ£Ó!NUf¹_wœuX±¹¶ÄL…2¨Ém=¶ì¡ƒ¤c oÍHjoæ{ø÷b\Pç*øi‰SFb »‰fÒ´”Á”ãáÖø…„¼®X.Ë^b ZsùaÊ¾;¦gX4"‡¯úRôÒ?rìÊbMèXÕ]¸Wõ5’ì¼à”bÜ)x™¯~Lt;éÛ™ÓÜ@8t¸X2˜Ö;C¤Eª?Èâš/p.Ÿ"Ë+ƒìúrŒç> /O°İÖ‡Vwa¬D°š(9ÎVôÂW’ÿÃFÄø»~%FôcÅÖ"„µ.âüï@%C Ğ <ùßC+|;§_P”Rıf é‰"˜«ì#m×3y·ª ½=1¸Ø—«]>š·ˆíx>4ğ2Ñ]ªTï«šÄ¡n#Z”Šş,ÏˆL5Z„6ZM—ÆmjTÂe/kæàV6bwÁœe+º+
+Ûÿõy[‚GÀAdZÎu9·Ëâ1¿f{y‹Ü8Ò319¡<ës€è¥Üˆx¤	í 5Gş!0¶nâeùU¾ Ça«çè\ßTÊÉöbBèjğMÒC0MÖñKkf÷WÏ¸îO‚ØVÈHê~ëln†&®¡¼ßK¾Y$ #nèÄ{•gh`ÄŞ:- H¬	j(|#½|@IM:ÄuÆéÁAM2X´vB ˜Ní„¹mÎF”–ÆB­’kT²ë®¼ÜıÏÖ[˜?ˆ«H3g0Èí–çşB™D[É}…÷WEë`­S'0É4_j´KZ™ïX¨”J1o'gVXÇ›Ä—}dëÊA®U}˜îUñ½}ÇYcZöOü&…•ªvAŞ.išo¼ÉÉ'óö*pi/‹‹¬ğ,Îbc"¨°©‡ºk3˜b?˜\hJ	\
+İ1iB–ü&y$ïI¡ìj;Z™~·zŸáÄ™-(7…>EŞëÈgÎ¡˜=Óº_qCU+&OV9‰Ğ¾NlbGÜ=÷TŞö³2á¾ß>jÀä°ô29ÂröÙFÔeå¥,3?^Î+§('Ïÿñ®ŞâA)a„æğâ(Ô½e:¡¢ú³£C˜i½ùj ä"n\?r0ümƒÚU3JÆ’ ÇÚ»ÉŸ† à o³4¤æâüRÄ-ŒöÚpÚò *½)íÕĞ ìğû”íBuhØ‰+òº¼Gzöâ’|Ûf{~—NSÜî”iËÂ`}ˆn{vÌŠË½æ@÷eÚo¥^8ê’}ËñF30uc cb†uÈ
+!µßğú[ç&—L‚3àñT=Rs6¶éZWFPx·İdm©ºÇylv5A‘RÑğÍ3ùâ
+6u¸lóîğJ£S§ÙDh+âkRÈ˜*º„dÈ6Ûm,B»·wKég}¹ÑRzÒZ	X’İãMğŸÂlšŠŸ…†Ú‰ô†c…QÂŒšjz“¼ÆˆJËZ,ï»N§NE'\“K Ø.[¼ òù}®ò§I%&GFa…4‘Ã«ø6¡ì7UE]ãDFW7­kÚ3Îo`"Ò»#µ7"A»‰h#i’°Í@íÔGàãd/İ²¤fá“ä,İ­,Áà¹€:ñ1ºÁÅkï]ÚŒ”âóª]»şRÕ|¢İ(,zå¬£!Ï±Å9?2aÆi3«ûÀ3	EI¬‰z)Ş ;¦)Päéœ©õÂ¯ø`E* Çhp÷©¨vÖa‰§”,Ieg"dÁ±¨Ç™Ò+R§Eua G‰î¦¹»¡Ùè;† V&=æ¼ ÷ÑjĞÍ\Vcüxî­]û)&¡?¡ÖR95ës4‡ìÓbëï<hE6±ŞêF^T•[Æû‡ƒÈêÖ@LR¤ÛĞÍnÅÓ…G‚£693 §Zºû§pó’ù1Â#^¢ÆYÛÄn«<Kky0E€C©]½1TØ/Û¬ÿ@¡ ¸nsCÌ+¬ğqf R/œı±ol¥ßU!K¬ëb_fU8Y¬Çt­ìĞó*~o¸~Hœä¨(=¸<@UÍ¯ø¿(ÎÃÃH°ôîk²öùü§,£öşººÓo]Œ,Jëü2!&öÈÖ›T9Óp. N„æ›W¼S8·İ·Äİ{c©'©gNu²9t^RèìÚ[>Qî½:fØĞšˆìÆÇwë?Í!ê¼fğ³B›Šîí¨
+ ¨zÚPœÊŸbàxPêş%Ñè4äú¼&†İñƒvIxä	ÎZ+$½t7¢›jxûDº0Z5åÅ_UšïÃúéînOèN(:Œ•„ 4l;uy!‚¨¯%ø¬¤ka$õí0ZéœÏsxı„UúÉ^ƒïeë ñÑ¬ûXC°c‹‹Ú®EºŸ¹˜üT²Ø-2é?›ÄEX$“ÄÃóÏ¸¸TÉ÷'¹©È>›HØÄ¦³Jr°å—æ•±Óy­7ÊxÄQÿB¦ÊçÂºáÈR\*o+?å^Ò¦Àã)ñÈŞz´ÚSÆˆæy~—
+İ”#6¡W•¯lÆ™Ç4`p¬ùc•e÷C¿°­VO@[sx»cL­vİÚe-§5<_Òğ»ç5ú@ÒM5¹?'HôŒÙ/¤ÉÂÊÇ%EêÙ&CGÅ%ğEÌ€UÑª3q‹"Ö&¢¯ËäuûÖzà®†6À‡Cx¬¯ééÏ@ñÁòºÛaÛ0šÍ¼ƒ_s%ô´ñÍ<ócê-k’äæK2aW¬ÔCÙ#âUÍà'nb¢´™È ÷Î¹¡V™Â„g¸¼MµÖ0Å»(Z¹`A2V´ä6Ïÿø7VÍ[Š¯_UÀ®" ƒùÑÑi;LW•÷ÑsÛÃ
+İ§ìªŒRMn …µ	š64Ş	Ó…¯ß™¨‰“~º~Y W_˜Ö]‘#Ûˆ8læÿuìEÅ.|É½» Ï@á*âoR.ÈU>d—Øªp³Nt ?ÉníÉö¢Öq’-*¨t»:ÃŞ:àZŞõùÙË”­K!!	íiÄˆõŠÎÃ´"µÀÿT³VŠ£XºæŸÁzs„«MÎ®€ÏU0(ÚM-ŞJB‡$JgŠÕ™ŞO“›ªÿ1ˆƒP®©ŸBt‚Úİ*U-^Ñ*—!ªÇ€ŸYgH÷Rî;Ç$í X¤_Ÿhñ™şzşÚHsØ‚«}÷Òğ¦—*r˜›Îr‚Nü]† ?åË!Y-ÑSí1_‚jÇr-Û!Vâf?8¯Y{FƒKƒ¦#ÇüìS1B­ÁFÎÊn‘>ä
