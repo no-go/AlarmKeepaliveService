@@ -24,6 +24,7 @@ import java.util.Calendar;
 
 public class ExampleService  extends Service {
     public static final String NOTIFICATION_CHANNEL_ID_LOCATION = "de_digisocken_alarmkeepaliveservice_exampleservice";
+    public static final long POLLDELAY = 59000L;
 
     private final IBinder mBinder = new ExampleBinder();
 
@@ -41,14 +42,14 @@ public class ExampleService  extends Service {
             mPreferences.edit().putInt("countDo", doing+1).apply();
             Log.v(getClass().getSimpleName(), "Service is doing stuff");
             showNotification("Service is doing stuff " + String.valueOf(doing+1));
-            handler.postDelayed(this, 30000);
+            handler.postDelayed(this, POLLDELAY);
         }
     };
 
     @Override
     public void onCreate() {
         super.onCreate();
-        handler.postDelayed(exampleServiceThread, 30000);
+        handler.postDelayed(exampleServiceThread, POLLDELAY);
     }
 
     @Override

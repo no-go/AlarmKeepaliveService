@@ -11,6 +11,8 @@ import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
 
+// @todo notification von nextcloud sind NICHT von talk/spreed implementiert, sondern teil von nextcloud selbst!!!! Das sollte man implementiere!
+
 public class MainActivity extends Activity {
 
     @Override
